@@ -2,11 +2,116 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Nerds</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="100" height="25" alt="Логотип дизайн-студии Nerds">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="basket">
+          <li class="basket-link">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Nerds</h1>
+
+      <section class="slider">
+        <!-- Здесь будут слайды -->
+        <h3 class="slide-title">Долго, дорого, скрупулезно.</h3>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="button" href="#">Узнать больше</a>
+      </section>
+
+      <section class="products">
+        <h2 class="visually-hidden">Продукты</h2>
+        <ul class="products-list">
+          <li class="product-item">
+            <img src="img/product01.png" alt="Веб-сайты" class="products-img" width="240" height="120">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит наш сайт</p>
+            <span class="button">Заказать</span>
+          </li>
+        </ul>
+        <ul class="products-list">
+          <li class="product-item">
+            <img src="img/product02.png" alt="Приложения" class="products-img" width="240" height="120">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <span class="button">Заказать</span>
+          </li>
+        </ul>
+        <ul class="products-list">
+          <li class="product-item">
+            <img src="img/product03.png" alt="Презентации" class="products-img" width="240" height="120">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <span class="button">Заказать</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-us">
+        <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3>Выполняем заказы на разработку:</h3>
+          <ul class="custom-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+          <div class="logo-since">
+            <img src="img/logo-since.svg" width="100" height="100" alt="Logo-since">
+          </div>
+        <h3>С 2004 года любим точность во всем:</h3>
+          <ul class="custom list">
+            <li>146% Уровень самоотдачи</li>
+            <li>100% Соблюдение сроков</li>
+            <li>50% Минимальная предоплата</li>
+          </ul>
+      </section>
+
+      <section class="logos">
+          <!-- Здесь будут логотипы партнеров -->
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="map">
+        <h2>Nerds Design Studio</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <span class="button">Напишите нам</span>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="footer-slogan">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+
+    <section class="modal modal-write-us">
+      <h2>Напишите нам</h2>
+      <!-- Здесь будет форма -->
+      <span class="button">Отправить</span>
+      <span class="modal-close">x</span>
+    </section>
 
   </body>
 </html>
