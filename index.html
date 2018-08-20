@@ -16,8 +16,9 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="basket">
-          <li class="basket-link">Корзина</li>
+        <ul class="cart">
+          <li class="cart-link">
+            <a class="cart-link" href="#">Корзина</a>
         </ul>
       </nav>
     </header>
@@ -46,26 +47,26 @@
         <h2 class="visually-hidden">Продукты</h2>
         <ul class="features-list">
           <li class="feature-item">
-            <img src="img/feature-01.png" class="products-img" width="300" height="146"  alt="Веб-сайты">
+            <img src="img/feature-01.png" class="feauture-img" width="300" height="146"  alt="Веб-сайты">
             <h3 class="features-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит наш сайт</p>
-            <span class="button">Заказать</span>
+            <a class="button" href="#">Заказать</a>
           </li>
         </ul>
         <ul class="features-list">
           <li class="feature-item">
-            <img src="img/feature-02.png" class="products-img" width="300" height="146"  alt="Приложения">
+            <img src="img/feature-02.png" class="feature-img" width="300" height="146"  alt="Приложения">
             <h3 class="features-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <span class="button">Заказать</span>
+            <a class="button" href="#">Заказать</a>
           </li>
         </ul>
         <ul class="features-list">
           <li class="feature-item">
-            <img src="img/feature-03.png" class="products-img" width="300" height="146"  alt="Презентации">
+            <img src="img/feature-03.png" class="feature-img" width="300" height="146"  alt="Презентации">
             <h3 class="features-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <span class="button">Заказать</span>
+            <a class="button" href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -100,11 +101,11 @@
 
     <footer class="main-footer">
       <div class="map">
-        <img src="img/map.png" width="1440" height="416" alt="Карта">
+        <img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <h2>Nerds Design Studio</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <span class="button">Напишите нам</span>
+        <a class="button" href="#">Напишите нам</a>
       </div>
       <div class="footer-social">
         <ul>
@@ -121,9 +122,19 @@
 
     <section class="modal modal-write-us">
       <h2>Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <span class="button">Отправить</span>
-      <span class="modal-close">x</span>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <label>Ваше имя:
+          <input type="text" name="name" value="" placeholder="Имя Фамилия">
+        </label>
+        <label>Ваш e-mail:
+          <input type="text" name="email" value="" placeholder="email@example.com">
+        </label>
+        <label>Текст письма:
+          <textarea name="letter" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
     </section>
   </body>
 </html>

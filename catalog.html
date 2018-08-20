@@ -16,8 +16,10 @@
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="basket">
-          <li class="basket-link">Корзина</li>
+        <ul class="cart">
+          <li class="cart-link">
+            <a class="cart-link" href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -26,15 +28,63 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <h3>Стоимость:</h3>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <label>От<input class="min-price" type="text" value="0"></label>
+            <label>До<input class="max-price" type="text" value="15000"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" id="filter-adaptive">
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage">
+                <label for="filter-advantage">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news">
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <h3>Сортировать:</h3>
-        <ul class="sort-list">
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
+        <ul class="sorting-list">
+          <li class="sorting-item"><a href="#">По цене</a></li>
+          <li class="sorting-item"><a href="#">По типу</a></li>
+          <li class="sorting-item"><a href="#">По названию</a></li>
         </ul>
       </section>
       <section class="catalog">
@@ -121,9 +171,19 @@
 
       <section class="modal modal-write-us">
         <h2>Напишите нам</h2>
-        <!-- Здесь будет форма -->
-        <span class="button">Отправить</span>
-        <span class="modal-close">x</span>
+        <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+          <label>Ваше имя:
+            <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+          <label>Ваш e-mail:
+            <input type="text" name="name" value="" placeholder="email@example.com">
+          </label>
+          <label>Текст письма:
+            <textarea name="letter" placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button>
+        </form>
       </section>
   </body>
 </html>

@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ульяна Дерякова](https://up.htmlacademy.ru/htmlcss/22/user/675753).
-* Наставник: [Алексей Гурьев](https://up.htmlacademy.ru/htmlcss/22/user/205403).
+* Наставник: [Денис Власов](https://up.htmlacademy.ru/htmlcss/22/user/18034).
 
 ---
 
