@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -39,6 +42,17 @@
         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
         <a class="button" href="#">Узнать больше</a>
       </div>
+      <ul class="slides-switches">
+        <li class ="slide-radio">
+          <button type="button" class="btn-1">Первый слайд</button>
+        </li>
+        <li class ="slide-radio">
+          <button type="button" class="btn-2">Второй слайд</button>
+        </li>
+        <li class ="slide-radio">
+          <button type="button" class="btn-3">Третий слайд</button>
+        </li>
+      </ul>
     </div>
 
     <main class="container">
@@ -50,7 +64,7 @@
             <img src="img/feature-01.png" class="feauture-img" width="300" height="146"  alt="Веб-сайты">
             <h3 class="features-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит наш сайт</p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button btn-red" href="#">Заказать</a>
           </li>
         </ul>
         <ul class="features-list">
@@ -58,7 +72,7 @@
             <img src="img/feature-02.png" class="feature-img" width="300" height="146"  alt="Приложения">
             <h3 class="features-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button btn-green" href="#">Заказать</a>
           </li>
         </ul>
         <ul class="features-list">
@@ -66,7 +80,7 @@
             <img src="img/feature-03.png" class="feature-img" width="300" height="146"  alt="Презентации">
             <h3 class="features-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button btn-yellow" href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -84,10 +98,10 @@
             <img src="img/logo-since.jpg" width="360" height="208" alt="Logo-since">
           </a>
         <h3>С 2004 года любим точность во всем:</h3>
-          <ul class="custom list">
-            <li>146% Уровень самоотдачи</li>
-            <li>100% Соблюдение сроков</li>
-            <li>50% Минимальная предоплата</li>
+          <ul class="percent-list">
+            <li><span class="percent">146%</span> Уровень самоотдачи</li>
+            <li><span class="percent">100%</span> Соблюдение сроков</li>
+            <li><span class="percent">50%</span> Минимальная предоплата</li>
           </ul>
       </section>
 
@@ -102,10 +116,10 @@
     <footer class="main-footer">
       <div class="map">
         <img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        <h2>Nerds Design Studio</h2>
+        <h2>Nёrds Design Studio</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="btn-write" href="#">Напишите нам</a>
       </div>
       <div class="footer-social">
         <ul>
@@ -120,7 +134,7 @@
       </div>
     </footer>
 
-    <section class="modal modal-write-us">
+    <section class="modal">
       <h2>Напишите нам</h2>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <label>Ваше имя:
@@ -132,7 +146,7 @@
         <label>Текст письма:
           <textarea name="letter" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="button" type="submit">Отправить</button>
+        <button class="btn-send" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>

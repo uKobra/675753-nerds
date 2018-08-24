@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -25,7 +28,7 @@
     </header>
 
     <main class="container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -76,15 +79,19 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button class="btn-filter" type="submit">Показать</button>
         </form>
       </section>
-      <section class="sort">
+      <section class="sorting">
         <h3>Сортировать:</h3>
         <ul class="sorting-list">
           <li class="sorting-item"><a href="#">По цене</a></li>
           <li class="sorting-item"><a href="#">По типу</a></li>
           <li class="sorting-item"><a href="#">По названию</a></li>
+        </ul>
+        <ul class="sorting-icons">
+          <li class="sorting-icon-down"><a href="#"></a></li>
+          <li class="sorting-icon-up"><a href="#"></a></li>
         </ul>
       </section>
       <section class="catalog">
@@ -150,7 +157,7 @@
 
       <footer class="main-footer">
         <div class="map">
-          <img src="img/map.png" width="1440" height="416" alt="Карта">
+          <img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           <h2>Nerds Design Studio</h2>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
