@@ -141,6 +141,7 @@ a {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .custom-list {
@@ -182,6 +183,13 @@ a {
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
+}
+
+.cost {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
 .filter ul {
@@ -224,6 +232,7 @@ a {
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .sorting ul {
@@ -260,6 +269,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .pagination-item a {
@@ -267,6 +277,7 @@ a {
   line-height: 18px;
   font-weight: 500;
   color: #000000;
+  text-transform: uppercase;
 
   background-color: #eeeeee;
 }
@@ -301,7 +312,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   color: #000000;
-
+  text-transform: uppercase;
 }
 
 .map p {
