@@ -26,39 +26,41 @@
       </nav>
     </header>
 
-    <div class="slider">
-      <div class="slide">
-        <h3 class="slide-title">Долго, дорого, скрупулезно.</h3>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="button" href="#">Узнать больше</a>
+    <div class="slide-container">
+      <div class="slider">
+        <div class="slide">
+          <h3 class="slide-title">Долго, дорого, скрупулезно.</h3>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <div class="slide">
+          <h3 class="slide-title">Любим математику как никто другой</h3>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <div class="slide">
+          <h3 class="slide-title">Только ночь, только хардкор</h3>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <ul class="slides-switches">
+          <li class ="slide-radio">
+            <button type="button" class="btn-1">Первый слайд</button>
+          </li>
+          <li class ="slide-radio">
+            <button type="button" class="btn-2">Второй слайд</button>
+          </li>
+          <li class ="slide-radio">
+            <button type="button" class="btn-3">Третий слайд</button>
+          </li>
+        </ul>
       </div>
-      <div class="slide">
-        <h3 class="slide-title">Любим математику как никто другой</h3>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a class="button" href="#">Узнать больше</a>
-      </div>
-      <div class="slide">
-        <h3 class="slide-title">Только ночь, только хардкор</h3>
-        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a class="button" href="#">Узнать больше</a>
-      </div>
-      <ul class="slides-switches">
-        <li class ="slide-radio">
-          <button type="button" class="btn-1">Первый слайд</button>
-        </li>
-        <li class ="slide-radio">
-          <button type="button" class="btn-2">Второй слайд</button>
-        </li>
-        <li class ="slide-radio">
-          <button type="button" class="btn-3">Третий слайд</button>
-        </li>
-      </ul>
     </div>
 
     <main class="container">
       <h1 class="visually-hidden">Nerds</h1>
-      <section class="features">
         <h2 class="visually-hidden">Продукты</h2>
+      <section class="features">
         <ul class="features-list">
           <li class="feature-item">
             <img src="img/feature-01.png" class="feauture-img" width="300" height="146"  alt="Веб-сайты">
@@ -86,23 +88,27 @@
       </section>
 
       <section class="about-us">
-        <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-          <ul class="custom-list">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-          <a class="logo-since">
-            <img src="img/logo-since.jpg" width="360" height="208" alt="Logo-since">
-          </a>
-        <h3>С 2004 года любим точность во всем:</h3>
-          <ul class="percent-list">
-            <li><span class="percent">146%</span> Уровень самоотдачи</li>
-            <li><span class="percent">100%</span> Соблюдение сроков</li>
-            <li><span class="percent">50%</span> Минимальная предоплата</li>
-          </ul>
+        <div class="column-left">
+          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+            <ul class="custom-list">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+        </div>
+        <div class="column-right">
+            <a class="logo-since">
+              <img src="img/logo-since.jpg" width="360" height="208" alt="Logo-since">
+            </a>
+            <h3>С 2004 года любим точность во всем:</h3>
+            <ul class="percent-list">
+              <li><span class="percent">146%</span> Уровень самоотдачи</li>
+              <li><span class="percent">100%</span> Соблюдение сроков</li>
+              <li><span class="percent">50%</span> Минимальная предоплата</li>
+            </ul>
+          </div>
       </section>
 
       <div class="partners">
@@ -121,16 +127,18 @@
         <p>тел. +7 (812) 275-75-75</p>
         <a class="btn-write" href="#">Напишите нам</a>
       </div>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
-      <div class="footer-slogan">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+        <div class="footer-slogan">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
 

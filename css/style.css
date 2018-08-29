@@ -39,11 +39,22 @@ a {
 }
 
 .main-header,
-.slider {
+.slide-container {
   background-color: #eeeeee;
 }
 
 /* Header */
+
+.main-header {
+  margin-bottom: 0;
+  padding-top: 50px;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  margin-right: 200px;
+}
 
 .main-navigation {
   font-size: 16px;
@@ -51,14 +62,30 @@ a {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
+
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
-.site-navigation,
+.site-navigation {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .cart {
   margin: 0;
   padding: 0;
 
   list-style: none;
+  margin-left: auto;
 }
 
 .site-navigation a,
@@ -78,15 +105,44 @@ a {
 
 /* Slider */
 
+.slide-container {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+}
+
 .slide-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+
+  margin: 0;
+  padding-top: 80px;
 }
 
 /* Main */
   /* Features */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.features {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
 
 .features-title {
   font-size: 24px;
@@ -98,7 +154,15 @@ a {
 }
 
 .features-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.feature-item {
+  width: 300px;
+  margin-right: 100px;
 }
 
 .btn-green {
@@ -129,6 +193,22 @@ a {
 
   /* About-us */
 
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.column-left {
+  width: 660px;
+  padding-top: 80px;
+}
+
+.column-right {
+  width: 360px;
+  padding-top: 40px;
+}
+
 .about-us h2 {
   font-size: 45px;
   line-height: 45px;
@@ -142,9 +222,14 @@ a {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+
+  padding-bottom: 50px;
 }
 
 .custom-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -154,8 +239,14 @@ a {
   font-weight: 400;
   color: #283136;
 
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+
   list-style: none;
 }
+
 .percent {
   font-size: 45px;
   line-height: 10px;
@@ -163,15 +254,91 @@ a {
   color: #000000;
 }
 
+.partners {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Catalog */
+
+.container-title {
+  background-color: #eeeeee;
+}
+
+.title-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog-columns {
+  display: flex;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+
+  width: 260px;
+}
+
+.catalog-column-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 800px;
+  padding: 0;
+  margin-left: auto;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+}
+
+.sorting-list {
+  display: flex;
+  width: 360px;
+}
+
+.sorting-item {
+  padding: 0;
+  margin-right: 28px;
+}
+
+.catalog {
+  width: 760px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+
+  list-style: none;
+}
 
 .catalog-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+  text-align: center;
 
-  background-color: #eeeeee;
+  margin: 0;
+  padding: 75px 0 115px 0;
 }
 
 .filter fieldset {
@@ -222,7 +389,7 @@ a {
   background-color: #dfdfdf;
 }
 
-.btn-filter:focus {
+.btn-filter:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }
@@ -252,7 +419,8 @@ a {
   opacity: 0.6;
 }
 
-.sorting a:focus {
+.sorting a:active,
+.active a {
   opacity: 1;
 }
 
@@ -272,6 +440,13 @@ a {
   text-transform: uppercase;
 }
 
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 .pagination-item a {
   font-size: 18px;
   line-height: 18px;
@@ -286,7 +461,7 @@ a {
   background-color: #dfdfdf;
 }
 
-.pagination-item a:focus {
+.pagination-item a:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }
@@ -306,6 +481,28 @@ a {
 }
 
 /* Footer */
+
+.main-footer {
+  width: 1440px;
+  margin: 85px auto 0 auto;
+}
+
+.footer-bottom {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+}
+
+.footer-social {
+  width: 260px;
+  margin-right: 140px;
+}
+
+.footer-slogan {
+  width: 560px;
+}
 
 .main-footer h2 {
   font-size: 18px;
