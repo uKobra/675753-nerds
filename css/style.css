@@ -967,15 +967,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-.filter-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -34px;
-
-  width: 25px;
-  height: 25px;
-
+.filter-input-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1321,9 +1313,21 @@ input[type="radio"].visually-hidden {
 
 .modal {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 760px;
+  padding: 66px 100px 85px 100px;
+  margin-top: -300px;
+  margin-left: -480px;
+  background-color: #ffffff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal h2 {
+  margin: 0;
+  margin-bottom: 41px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -1331,23 +1335,52 @@ input[type="radio"].visually-hidden {
 }
 
 .modal label {
+  margin-bottom: 35px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
 }
 
+.write-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.write-us .name,
+.write-us .email {
+  width: 360px;
+}
+
 .write-us input[type="text"],
 .write-us textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
 
   border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.write-us input[type="text"] {
+  width: 100%;
+}
+
+.write-us input::placeholder,
+.write-us textarea::placeholder {
+  font: inherit;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .write-us input:hover,
 .write-us textarea:hover {
-  border-color: #444444;
+  border-color: #b4b9bb;
 }
 
 .write-us input:focus,
@@ -1358,4 +1391,73 @@ input[type="radio"].visually-hidden {
 .write-us input:invalid {
   color: #e74246;
   border-color: #e74246;
+}
+
+.write-us textarea {
+  width: 760px;
+  height: 118px;
+  resize: none;
+}
+
+.btn-send {
+  box-sizing: border-box;
+  width: 260px;
+  margin-top: 10px;
+}
+
+.btn-send {
+  display: block;
+  width: 260px;
+  padding: 16px 0;
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  background-color: #e74246;
+}
+
+.btn-send:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
