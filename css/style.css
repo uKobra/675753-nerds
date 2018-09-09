@@ -1239,7 +1239,7 @@ input[type="radio"].visually-hidden {
 }
 
 .yandex-map {
-  border: 1px;
+  border: 0;
   width: 100%;
   min-height: 416px;
 }
@@ -1596,7 +1596,7 @@ input[type="radio"].visually-hidden {
           animation: shake 0.6s;
 }
 
-@-webkit-keyframes bounce {
+@keyframes bounce {
   0% {
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px);
@@ -1604,7 +1604,7 @@ input[type="radio"].visually-hidden {
 
   70% {
     -webkit-transform: translateY(30px);
-            transform: translateY(-0px);
+            transform: translateY(30px);
   }
 
   90% {
@@ -1615,6 +1615,53 @@ input[type="radio"].visually-hidden {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
