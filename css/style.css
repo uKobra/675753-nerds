@@ -80,7 +80,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  width: 440px;
   margin: 0;
   padding: 0;
   padding-bottom: 10px;
@@ -1223,8 +1222,6 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  width: 1440px;
-  height: 416px;
   margin: 80px auto 70px auto;
 
   background-image: url("../img/map.png");
