@@ -6,7 +6,7 @@
     <title>Nerds</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -123,13 +123,15 @@
     </main>
 
     <footer class="main-footer">
-      <div class="map">
+      <div class="contacts-container">
         <div class="contacts">
           <h2>Nёrds Design Studio</h2>
           <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="btn-write" href="#">Напишите нам</a>
         </div>
+      </div>
+      <div class="map">
         <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBuyA-HzxD" width="1440" height="416"></iframe>
       </div>
       <div class="footer-bottom">
@@ -168,8 +170,8 @@
     <section class="modal">
       <h2>Напишите нам</h2>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-        <label class="name">Ваше имя:
-          <input type="text" name="name" value="" placeholder="Имя Фамилия">
+        <label class="username">Ваше имя:
+          <input type="text" name="username" value="" placeholder="Имя Фамилия">
         </label>
         <label class="email">Ваш e-mail:
           <input type="text" name="email" value="" placeholder="email@example.com">
@@ -181,6 +183,6 @@
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
-    <script src="js/modal.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>

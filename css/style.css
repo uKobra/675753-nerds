@@ -1217,18 +1217,17 @@ input[type="radio"].visually-hidden {
 
 /* Footer */
 
-.main-footer {
-  margin-bottom: 70px;
+.contacts-container {
+  width: 1200px;
+  position: relative;
 }
 
 .map {
-  margin: 80px auto 70px auto;
+  margin: 80px auto 65px auto;
 
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  position: relative;
 }
 
 .inner-page .map {
@@ -1244,7 +1243,7 @@ input[type="radio"].visually-hidden {
 .contacts {
   position: absolute;
   top: 55px;
-  left: 140px;
+  left: 180px;
   width: 270px;
 
   background-color: #ffffff;
@@ -1254,7 +1253,7 @@ input[type="radio"].visually-hidden {
 
 .contacts p {
   margin: 0;
-  padding: 6px 50px 13px 1px;
+  padding: 2px 50px 8px 1px;
 }
 
 .btn-write {
@@ -1291,7 +1290,7 @@ input[type="radio"].visually-hidden {
 .footer-bottom {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px 20px 70px 20px;
 
   display: -webkit-box;
 
