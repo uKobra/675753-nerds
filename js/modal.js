@@ -2,9 +2,9 @@
   var modal = document.querySelector(".modal");
   var close = document.querySelector(".modal-close");
   var form = document.querySelector(".write-us");
-  var username = modal.querySelector(".username");
-  var email = modal.querySelector(".email");
-  var letter = modal.querySelector(".letter")
+  var username = modal.querySelector("[name=username]");
+  var email = modal.querySelector("[name=email]");
+  var letter = modal.querySelector("[name=letter]")
   var isStorageSupport = true;
   var storage = "";
 
@@ -32,7 +32,6 @@
   });
 
   form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
     if (!username.value || !email.value || !letter.value) {
       evt.preventDefault();
       modal.classList.remove("modal-error");
