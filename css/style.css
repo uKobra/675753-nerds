@@ -331,10 +331,6 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
   margin: 0;
   padding: 0;
   padding-bottom: 80px;
@@ -360,6 +356,12 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
@@ -368,8 +370,12 @@ input[type="radio"].visually-hidden {
 
 .feature-item {
   width: 300px;
-  margin-top: 80px;
+  padding-top: 80px;
   margin-right: 100px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
 }
 
 .features-button {
